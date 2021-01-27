@@ -1,0 +1,111 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-text {
+  color: crimson;
+  text-align: justify;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.logo li {
+  float: left;
+}
+
+.logo li a {
+  color: darkviolet;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.logo li a:hover {
+  color: black;
+}
+
+.login li {
+  float: right;
+  display: flex;
+  vertical-align: middle;
+}
+
+.login li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.login li a:hover {
+  color: black;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  max-width: 1300px;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right,
+  .flex-item-left {
+    flex: 100%;
+  }
+}
+
+.footer {
+  background-color: gray;
+}
+
+.social-media-icons li {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  overflow: hidden;
+  padding-right: 5px;
+}
+
+.footer h3 {
+  padding: 5px 0px 0px 40px;
+  color: aliceblue;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+.footer h4 {
+  padding: 5px 40px 0px 0px;
+  color: aliceblue;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  float: right;
+}
