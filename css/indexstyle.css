@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+.burger div {
+  height: 2px;
+  width: 20px;
+  background-color: rgb(221, 215, 215);
+  margin: 5px;
+}
