@@ -5,14 +5,23 @@
   font-family: "Itim", cursive;
 }
 
-.burger {
-  cursor: pointer;
-  display: none;
+.image {
+  max-width: 275px;
+  width: 100%;
 }
 
-.burger div {
-  height: 2px;
-  width: 20px;
-  background-color: rgb(221, 215, 215);
-  margin: 5px;
+#about {
+  padding: 100px 0px;
+  background-color: rgb(148, 147, 147);
+}
+
+a {
+  text-decoration: none;
+}
+.interests li {
+  list-style: none;
+}
+.experience {
+  padding: 50px 0px;
+  background-color: khaki;
 }
