@@ -25,3 +25,9 @@ a {
   padding: 50px 0px;
   background-color: khaki;
 }
+.experience-title {
+  padding-bottom: 25px;
+}
+.experience-unit {
+  padding-bottom: 50px;
+}
