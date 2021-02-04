@@ -13,185 +13,338 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/all.css">
+  <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/solid.css">
+  <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/brands.css">
   <link rel="stylesheet" href="/css/indexstyle.css" />
 
   <title>Ritam Jana</title>
 </head>
 
 <body>
+  <!--Navigation bar-->
   <header>
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a href="#" class="navbar-brand">RITAM</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <i class="hamburger fas fa-bars fa-lg" data-toggle="collapse" data-target="#navbarMenu"></i>
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ml-auto" id=navbar-elements>
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
   </header>
 
+ 
 
-  <main>
+  
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-center">
+          <img class="image rounded-circle" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+            alt="personal picture">
+          <br><br>
+          <div class="portrait-title">
+            <h3 itemprop="name">Ritam Jana</h3>
+            <h4 itemprop="jobTitle">First Year Undergraduate Student</h4>
+            <h5>
+              <a href="https://www.iitk.ac.in/mse/">
+                Department of Materials Science and Engineering
+              </a>
+            </h5>
 
-    <section id="about" class="home-section wg-about">
-      <div class="container">
+            <h5>
+              <a href="http://iitk.ac.in" target="_blank">
+                <span itemprop="name">Indian Institute Of Technology Kanpur</span>
+              </a>
+            </h5>
+          </div>
+          <br>
+        </div>
+        <div class="col-12 col-lg-8">
+          <h1>About Me</h1>
+          <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+            quibusdam
+            fugit totam libero
+            voluptates
+            deserunt eos, molestiae perferendis ducimus in voluptas tenetur aperiam facilis ut
+            exercitationem
+            dignissimos
+            quisquam corporis eligendi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+            eius obcaecati,
+            eos
+            nisi et iure fuga voluptates commodi, minima necessitatibus, incidunt magni accusamus
+            sapiente voluptatum
+            ex
+            dolorem? Sed, culpa debitis!</p>
+
+          <p style="font-size: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
+            sit? Qui
+            voluptates neque voluptate
+            reiciendis nisi, provident similique porro, totam maxime rerum et labore, soluta voluptatum
+            delectus dolor
+            fuga tempore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda illo
+            sapiente id deleniti
+            atque expedita.</p>
+
+          <div class="row">
+            <div class="col-11 col-md-5 interests">
+              <h2>Interests</h2>
+              <ul class="ul-edu fa-ul">
+                <li>
+                  <i class="fas fa-atom "></i>
+                  Artificial Intelligence
+                </li>
+                <li>
+                  <i class="fas fa-atom "></i>
+                  Deep Learning
+                </li>
+                <li>
+                  <i class="fas fa-atom "></i>
+                  Competetive Programming
+                </li>
+                <li>
+                  <i class="fas fa-atom "></i>
+                  Astronomy
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-11 col-md-7">
+              <h2>Education</h2>
+              <ul class="ul-edu fa-ul">
+                <li>
+                  <i class="fas fa-graduation-cap fa-lg"></i>
+                  BTech in Material Science and Engineering,
+                  2024 (Expected)
+                  <p class="institution">Indian Institute Of Technology, Kanpur</p>
+
+                </li>
+
+                <li>
+                  <i class="fas fa-graduation-cap fa-lg"></i>
+                  CBSE(AISSCE), 2020
+                  <p class="institution">The Mother's International School</p>
+
+                </li>
+
+                <li>
+                  <i class="fas fa-graduation-cap fa-lg"> </i>
+                  CBSE(AISCE), 2018
+                  <p class="institution">The Mother's International School</p>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row text-center">
+        <div class="col-12 resume"><a href="#" style="font-size: 20px;">Resume </a></div>
+      </div>
+    </div>
+  </section>
+
+  <!--Jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p class="lead">“I don't care that they stole my idea . . I care that they don't have any of their own”</p>
+      <p class="lead" style="text-align: right;">~Nikola Tesla</p>
+  
+    </div>
+  </div>
+
+  <!--Experience-->
+  <section id="experience">
+    <div class="container">
+      <div class="row experience-title">
+        <div class="col-12 col-md-4">
+          <h1>Experience</h1>
+        </div>
+      </div>
+      <div class="row experience-unit">
+        <div class="col-12 col-md-8">
+          <h1>Width 8-12</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime
+            ab
+            corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui
+            deserunt,
+            animi eius veritatis?</p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <h2>Picture</h2>
+          <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
+        </div>
+      </div>
+      <div class="row experience-unit">
+        <div class="col-12 col-md-8 order-md-last">
+          <h1>Width 8-12</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime
+            ab
+            corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui
+            deserunt,
+            animi eius veritatis?</p>
+        </div>
+        <div class="col-12 col-md-4 order-md-first text-center">
+          <h2>Picture</h2>
+          <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
+
+        </div>
+      </div>
+      <div class="row experience-unit">
+        <div class="col-12 col-md-8">
+          <h1>Width 8-12</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime
+            ab
+            corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui
+            deserunt,
+            animi eius veritatis?
+          </p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <h2>Picture</h2>
+          <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Hidden Projects-->
+  <section id="projects">
+    <div class="container">
+      <div class="row project-title">
+        <div class="col-12 col-md-4">
+          <h1>Projects</h1>
+        </div>
+      </div>
+      <div id="visible-projects">
         <div class="row">
-          <div class="col-12 col-md-4 text-center">
-            <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
-            <br><br>
-            <div class="portrait-title">
-              <h3 itemprop="name">Ritam Jana</h3>
-              <h3 itemprop="jobTitle">First Year Undergraduate Student</h3>
-
-
-              <h4 itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
-                <a href="https://www.iitk.ac.in/mse/" target="_blank" itemprop="url" rel="noopener">
-                  <span itemprop="name">Department of Materials Science and Engineering</span>
-                </a>
-              </h4>
-
-              <h4 itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
-                <a href="http://iitk.ac.in" target="_blank" itemprop="url" rel="noopener">
-                  <span itemprop="name">Indian Institute Of Technology Kanpur</span>
-                </a>
-              </h4>
-
+          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
             </div>
-            <br>
-            <div class="row text-center">
-              <div class="col-6 col-md-6 resume"><a href="#">Resume</a></div>
-              <div class="col-6 col-md-6 resume"><a href="#">Resume</a></div>
-            </div>
-            <br><br>
           </div>
-          <div class="col-12 col-md-8">
-            <h1>About Me</h1>
-            <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quibusdam
-              fugit totam libero
-              voluptates
-              deserunt eos, molestiae perferendis ducimus in voluptas tenetur aperiam facilis ut exercitationem
-              dignissimos
-              quisquam corporis eligendi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eius obcaecati,
-              eos
-              nisi et iure fuga voluptates commodi, minima necessitatibus, incidunt magni accusamus sapiente voluptatum
-              ex
-              dolorem? Sed, culpa debitis!</p>
-
-            <p style="font-size: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, sit? Qui
-              voluptates neque voluptate
-              reiciendis nisi, provident similique porro, totam maxime rerum et labore, soluta voluptatum delectus dolor
-              fuga tempore.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda illo sapiente id deleniti
-              atque expedita.</p>
-
-            <div class="row">
-              <div class="col-12 col-md-4 interests">
-                <h2>Interests</h2>
-                <ul>
-                  <li>Machine Learning</li>
-                  <li>Machine Learning</li>
-                  <li>Machine Learning</li>
-                  <li>Machine Learning</li>
-                </ul>
+          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
               </div>
-              <div class="col-12 col-md-8">
-                <h2>Education</h2>
-                <ul class="ul-edu fa-ul">
-
-                  <li>
-                    <i class="fa-li fas fa-graduation-cap"></i>
-                    <div class="description">
-                      <p class="course">BTech in Materials Science and Engineering, 2024 (Expected)</p>
-                      <p class="institution">Indian Institute Of Technology, Kanpur</p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <i class="fa-li fas fa-graduation-cap"></i>
-                    <div class="description">
-                      <p class="course">CBSE, 2020</p>
-                      <p class="institution"><a href="http://themis.in/">The Mother's International School</a></p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <i class="fa-li fas fa-graduation-cap"></i>
-                    <div class="description">
-                      <p class="course">CBSE, 2020</p>
-                      <p class="institution"><a href="http://themis.in/">The Mother's International School</a></p>
-                    </div>
-                  </li>
-
-                </ul>
+            </div>
+          </div>
+          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="experience">
-      <div class="container">
-        <div class="row experience-title">
-          <div class="col-12 col-md-4">
-            <h1>Experience</h1>
+      <div id="extra-projects" class="collapse">
+        <div class="row">
+          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row experience-unit">
-          <div class="col-12 col-md-8">
-            <h1>Width 8-12</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime ab
-              corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui deserunt,
-              animi eius veritatis?</p>
+          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-12 col-md-4 text-center">
-            <h2>Picture</h2>
-            <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
-          </div>
-        </div>
-        <div class="row experience-unit">
-          <div class="col-12 col-md-8 order-md-last">
-            <h1>Width 8-12</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime ab
-              corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui deserunt,
-              animi eius veritatis?</p>
-          </div>
-          <div class="col-12 col-md-4 order-md-first text-center">
-            <h2>Picture</h2>
-            <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
-
-          </div>
-        </div>
-        <div class="row experience-unit">
-          <div class="col-12 col-md-8">
-            <h1>Width 8-12</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime ab
-              corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui deserunt,
-              animi eius veritatis?</p>
-          </div>
-          <div class="col-12 col-md-4 text-center">
-            <h2>Picture</h2>
-            <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
-
+          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+      <h5 class="center viewbtn" data-toggle='collapse' data-target="#extra-projects">
+        <span class="view-more" id='collapseExample'>View More</span>
+      </h5>
+    </div>
+  </section>
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h5>The best way to reach me is to email me at <a style="text-decoration: underline dotted;"
+              href="mailto:ritamjana2358@gmail.com">ritamjana2358@gmail.com</a>. I
+            try to respond within 8-10 hours of receiving a message.</h5>
+        </div>
+        <div class="col-12 col-lg-4 network-list">
+          <div class="d-flex justify-content-around">
+            <ul class="network-icon">
+              <li>
+                <a href="https://github.com/ritam2358" target="_blank" rel="noopener">
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/ritam-jana" target="_blank" rel="noopener">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/ritam.jana.3914" target="_blank" rel="noopener">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </section>
   <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/javascript.js"></script>
 
 
 </body>
