@@ -25,16 +25,15 @@
 <body>
   <!--Navigation bar-->
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a href="#" class="navbar-brand">RITAM</a>
         <i class="hamburger fas fa-bars fa-lg" data-toggle="collapse" data-target="#navbarMenu"></i>
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ml-auto" id=navbar-elements>
             <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
           </ul>
         </div>
@@ -42,9 +41,9 @@
     </nav>
   </header>
 
- 
 
-  
+
+
   <section id="about">
     <div class="container">
       <div class="row">
@@ -70,7 +69,12 @@
           <br>
         </div>
         <div class="col-12 col-lg-8">
-          <h1>About Me</h1>
+          <div class="row about-title">
+            <div class="col-12 col-md-4">
+              <h1>About Me</h1>
+            </div>
+          </div>
+
           <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
             quibusdam
             fugit totam libero
@@ -161,64 +165,59 @@
     <div class="container">
       <p class="lead">“I don't care that they stole my idea . . I care that they don't have any of their own”</p>
       <p class="lead" style="text-align: right;">~Nikola Tesla</p>
-  
+
     </div>
   </div>
 
-  <!--Experience-->
-  <section id="experience">
+  <!--Skills-->
+  <section id="skills">
     <div class="container">
-      <div class="row experience-title">
+      <div class="row skills-title">
         <div class="col-12 col-md-4">
-          <h1>Experience</h1>
+          <h1>Skills</h1>
         </div>
       </div>
-      <div class="row experience-unit">
-        <div class="col-12 col-md-8">
-          <h1>Width 8-12</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime
-            ab
-            corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui
-            deserunt,
-            animi eius veritatis?</p>
+      <div class="row text-center">
+        <div class="col-6 col-md-3 skill-item">
+          <img src="/media/skills-icons/Python.png">
+          <p>Python</p>
         </div>
-        <div class="col-12 col-md-4 text-center">
-          <h2>Picture</h2>
-          <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
+        <div class="col-6 col-md-3 skill-item">
+          <img src="/media/skills-icons/C++.png">
+          <p>C++</p>
         </div>
-      </div>
-      <div class="row experience-unit">
-        <div class="col-12 col-md-8 order-md-last">
-          <h1>Width 8-12</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime
-            ab
-            corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui
-            deserunt,
-            animi eius veritatis?</p>
+        <div class="col-6 col-md-3 skill-item">
+          <img src="/media/skills-icons/C.png">
+          <p>C</p>
         </div>
-        <div class="col-12 col-md-4 order-md-first text-center">
-          <h2>Picture</h2>
-          <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
+        <div class="col-6 col-md-3 skill-item">
+          <img src="/media/skills-icons/JavaScript.png" alt="">
+          <p>JavaScript</p>
+        </div>
 
-        </div>
       </div>
-      <div class="row experience-unit">
-        <div class="col-12 col-md-8">
-          <h1>Width 8-12</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime
-            ab
-            corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui
-            deserunt,
-            animi eius veritatis?
-          </p>
+      <div class="row text-center">
+        <div class="col-6 col-md-3 skill-item">
+          <img src="/media/skills-icons/HTML.png" alt="">
+          <p>HTML5</p>
         </div>
-        <div class="col-12 col-md-4 text-center">
-          <h2>Picture</h2>
-          <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
+        <div class="col-6 col-md-3 skill-item">
+          <img src="/media/skills-icons/CSS.png" alt="">
+          <p>CSS3</p>
+        </div>
+        <div class="col-6 col-md-3 skill-item">
+          <img src="/media/skills-icons/JQuery.png" alt="">
+          <p>JQuery</p>
+        </div>
+        <div class="col-6 col-md-3 skill-item">
+          <img src="/media/skills-icons/NodeJS.png" alt="">
+          <p>NodeJS</p>
+        </div>
+        
 
-        </div>
       </div>
     </div>
+
   </section>
 
   <!--Hidden Projects-->
@@ -302,6 +301,8 @@
       </h5>
     </div>
   </section>
+
+  <!--footer-->
   <section id="footer">
     <div class="container">
       <div class="row">
@@ -323,11 +324,7 @@
                   <i class="fab fa-linkedin fa-2x"></i>
                 </a>
               </li>
-              <li>
-                <a href="#" target="_blank" rel="noopener">
-                  <i class="fab fa-twitter fa-2x"></i>
-                </a>
-              </li>
+
               <li>
                 <a href="https://www.facebook.com/ritam.jana.3914" target="_blank" rel="noopener">
                   <i class="fab fa-facebook fa-2x"></i>
