@@ -1,18 +1,29 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Comfortaa", cursive;
+}
+
+.image {
+  max-width: 250px;
+  width: 100%;
 }
 
 body {
   background-color: rgb(10, 25, 47);
 }
+h1 {
+  color: rgb(132, 242, 218);
+  font-family: "Fjalla One", sans-serif;
+}
 
+p {
+  color: rgb(160, 160, 160);
+}
 .container {
   padding: 0px 25px;
 }
-.navbar {
-  opacity: 0.9;
-}
+
 .hamburger {
   color: white;
 }
@@ -26,41 +37,43 @@ body {
     display: none;
   }
 }
+.navbar-brand {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  color: azure;
+  transition: all 0.5s;
+}
+
+.navbar-brand:hover {
+  color: rgb(132, 242, 218);
+}
+
+.nav-link {
+  font-size: 18px;
+  color: azure;
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  color: rgb(132, 242, 218);
+}
 
 .resume-button {
+  font-size: 18px;
   background-color: rgb(13, 53, 90);
   color: white;
-  border: 2px solid green;
-  border-radius: 0.5em;
+  border: 2px solid rgb(132, 242, 218);
+  border-radius: 0.3em;
+  transition: all 0.5s;
 }
 
 .resume-button:hover {
-  background-color: green;
-}
-.carousel-image {
-  width: 100%;
-  height: 100%;
-}
-
-.image {
-  max-width: 250px;
-  width: 100%;
-}
-
-.jumbotron {
-  padding: 25px 15px 15px 15px;
+  background-color: rgb(132, 242, 218);
+  color: rgb(13, 53, 90);
 }
 
 .interest-list {
   list-style: none;
-}
-
-.education-list {
-  list-style: none;
-}
-
-.jumbotron {
-  margin-bottom: 0px;
 }
 
 #about {
@@ -72,26 +85,16 @@ body {
 }
 
 #experience {
+  background-color: rgb(10, 31, 63);
   padding: 50px 0px;
 }
 
 #footer {
   padding: 25px 0px;
 }
-
-.skill-item {
-  padding: 20px 0px;
-}
-
-.skill-item img {
-  max-width: 100px;
-  max-height: 100px;
-  width: 100%;
-  height: 100%;
-}
-
-.hidden {
-  padding: 10px 20px;
+#projects {
+  background-color: rgb(10, 31, 63);
+  padding: 75px 0px;
 }
 
 .project-item {
@@ -109,6 +112,18 @@ body {
   padding-bottom: 20px;
 }
 
+.email {
+  font-family: "Zilla Slab", serif;
+  text-decoration: underline dotted;
+  transition: all 0.75s;
+  color: rgb(160, 160, 160);
+}
+
+.email:hover {
+  text-decoration: underline dotted;
+  color: rgb(132, 242, 218);
+}
+
 .network-list {
   padding-top: 20px;
 }
@@ -121,6 +136,15 @@ body {
 
 .network-icon li {
   padding: 0px 10px;
+}
+
+.network-icon li a {
+  color: rgb(160, 160, 160);
+  transition: all 0.5s;
+}
+
+.network-icon li a:hover {
+  color: rgb(132, 242, 218);
 }
 
 .card {
@@ -140,12 +164,16 @@ body {
 }
 
 .view-more {
-  color: black;
+  padding: 15px 27px;
+  font-size: 16px;
+  background-color: rgb(10, 25, 47);
+  color: rgb(132, 242, 218);
+  border: 2px solid rgb(132, 242, 218);
+  border-radius: 0.25em;
   transition: all 0.5s;
 }
 
 .view-more:hover {
   cursor: pointer;
-  font-size: 22px;
-  border-bottom: 1px solid black;
+  background-color: rgb(7, 40, 90);
 }

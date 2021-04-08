@@ -9,7 +9,10 @@
 
     <link rel="ICON" href="media/sales_sale_supermarket_stock_market_icon_153849.ico" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Zilla+Slab:ital,wght@1,300&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -25,9 +28,9 @@
 <body>
     <!--Navigation bar-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(13, 53, 90);">
-            <div class="container">
-                <a href="#" class="navbar-brand">RITAM</a>
+        <nav class="navbar navbar-expand-lg " style="background-color: rgb(13, 53, 90);">
+
+                <a href="#" class="navbar-brand">RITAM JANA</a>
                 <i class="hamburger fas fa-bars fa-lg" data-toggle="collapse" data-target="#navbarMenu"></i>
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ml-auto" id=navbar-elements>
@@ -38,28 +41,27 @@
                         <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
                         <form class="form-inline">
                             <a href="#" target="_blank"><button class="btn resume-button">Resume</button></a>
-                          </form>
+                        </form>
                     </ul>
                 </div>
-            </div>
         </nav>
     </header>
 
     <section id="about">
         <div class="container">
             <div class="row align-content-center">
-                <div class="col-12 col-lg-4 text-center order-last" >
+                <div class="col-12 col-lg-4 order-last my-auto text-center" >
                     <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
                         alt="personal picture">
                 </div>
                 <div class="col-12 col-lg-8">
                     <div class="row about-title">
                         <div class="col-12 col-md-4">
-                            <h2>About Me</h2>
+                            <h1 >About Me</h1>
                         </div>
                     </div>
 
-                    <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+                    <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
                         quibusdam
                         fugit totam libero
                         voluptates
@@ -74,7 +76,7 @@
                         ex
                         dolorem? Sed, culpa debitis!</p>
 
-                    <p style="font-size: 16px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
+                    <p style="font-size: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
                         sit? Qui
                         voluptates neque voluptate
                         reiciendis nisi, provident similique porro, totam maxime rerum et labore, soluta voluptatum
@@ -119,7 +121,7 @@
         <div class="container">
             <div class="row experience-title">
                 <div class="col-12 col-md-6">
-                    <h2>Work Experience</h2>
+                    <h1>Work Experience</h1>
                 </div>
             </div>
         </div>
@@ -130,7 +132,7 @@
         <div class="container">
             <div class="row skills-title">
                 <div class="col-12 col-md-4">
-                    <h2>Skills</h2>
+                    <h1>Skills</h1>
                 </div>
             </div>
         </div>
@@ -138,15 +140,104 @@
     </section>
 
     <!--Hidden Projects-->
+    <section id="projects">
+        <div class="container">
+            <div class="row project-title">
+                <div class="col-12 col-md-4">
+                    <h1>Projects</h1>
+                </div>
+            </div>
+            <div id="visible-projects">
+                <div class="row">
+                    <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+                                    alt="">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+                                    alt="">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+                                    alt="">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="extra-projects" class="collapse">
+                <div class="row">
+                    <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+                                    alt="">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+                                    alt="">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+                                    alt="">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                                    <button class="view-more" id='collapseExample' data-toggle='collapse' data-target="#extra-projects">View More</button>
 
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
     <!--footer-->
     <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8">
-                    <p>The best way to reach me is to email me at <a style="text-decoration: underline dotted;"
-                            href="mailto:ritamjana2358@gmail.com">ritamjana2358@gmail.com</a>. I
+                    <p style="font-family: 'Zilla Slab', serif; font-size: 22px;">The best way to reach me is to email me at <a class="email"
+                            href="mailto:ritam20@iitk.ac.in">ritam20@iitk.ac.in</a>. I
                         try to respond within 8-10 hours of receiving a message.</p>
                 </div>
                 <div class="col-12 col-lg-4 network-list">
