@@ -1,16 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Itim", cursive;
-}
-a {
-  color: red;
-  transition: all 0.3s;
 }
 
-a:hover {
-  text-decoration: none;
-  color: green;
+body {
+  background-color: rgb(10, 25, 47);
 }
 
 .container {
@@ -19,7 +13,6 @@ a:hover {
 .navbar {
   opacity: 0.9;
 }
-
 .hamburger {
   color: white;
 }
@@ -34,6 +27,16 @@ a:hover {
   }
 }
 
+.resume-button {
+  background-color: rgb(13, 53, 90);
+  color: white;
+  border: 2px solid green;
+  border-radius: 0.5em;
+}
+
+.resume-button:hover {
+  background-color: green;
+}
 .carousel-image {
   width: 100%;
   height: 100%;
@@ -43,12 +46,15 @@ a:hover {
   max-width: 250px;
   width: 100%;
 }
+
 .jumbotron {
   padding: 25px 15px 15px 15px;
 }
+
 .interest-list {
   list-style: none;
 }
+
 .education-list {
   list-style: none;
 }
@@ -62,7 +68,6 @@ a:hover {
 }
 
 #skills {
-  background-color: rgb(233, 236, 239);
   padding: 75px 0px;
 }
 
@@ -143,8 +148,4 @@ a:hover {
   cursor: pointer;
   font-size: 22px;
   border-bottom: 1px solid black;
-}
-
-.network-icon li a:hover {
-  font-size: 17px;
 }

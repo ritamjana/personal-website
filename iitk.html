@@ -25,17 +25,20 @@
 <body>
     <!--Navigation bar-->
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(13, 53, 90);">
             <div class="container">
                 <a href="#" class="navbar-brand">RITAM</a>
                 <i class="hamburger fas fa-bars fa-lg" data-toggle="collapse" data-target="#navbarMenu"></i>
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ml-auto" id=navbar-elements>
-                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
+                        <form class="form-inline">
+                            <a href="#" target="_blank"><button class="btn resume-button">Resume</button></a>
+                          </form>
                     </ul>
                 </div>
             </div>
@@ -44,27 +47,10 @@
 
     <section id="about">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-4 text-center">
-                    <img class="image rounded-circle" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+            <div class="row align-content-center">
+                <div class="col-12 col-lg-4 text-center order-last" >
+                    <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
                         alt="personal picture">
-                    <br><br>
-                    <div class="portrait-title">
-                        <h3 itemprop="name">Ritam Jana</h3>
-                        <h5 itemprop="jobTitle">First Year Undergraduate Student</h5>
-                        <h6>
-                            <a href="https://www.iitk.ac.in/mse/">
-                                Department of Materials Science and Engineering
-                            </a>
-                        </h6>
-
-                        <h6>
-                            <a href="http://iitk.ac.in" target="_blank">
-                                <span itemprop="name">Indian Institute Of Technology Kanpur</span>
-                            </a>
-                        </h6>
-                    </div>
-                    <br>
                 </div>
                 <div class="col-12 col-lg-8">
                     <div class="row about-title">
@@ -98,57 +84,9 @@
                         sapiente id deleniti
                         atque expedita.</p>
                     <div class="row">
-                        <div class="col-md-5">
-                            <h3>Interests</h3>
-                            <ul class="ul-interests">
-
-                                <li>Cyber Security</li>
-
-                                <li>Competitive Programming</li>
-
-                                <li>Software Development</li>
-
-                                <li>Artificial Intelligence</li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-7">
-                            <h3>Education</h3>
-                            <ul class="ul-edu fa-ul">
-
-                                <li>
-                                    <i class="fa-li fas fa-graduation-cap"></i>
-                                    <div class="description">
-                                        <p class="course">BTech in Aerospace Engineering, 2022 (Expected)</p>
-                                        <p class="institution">Indian Institute Of Technology, Kanpur</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <i class="fa-li fas fa-graduation-cap"></i>
-                                    <div class="description">
-                                        <p class="course">ISC, 2018</p>
-                                        <p class="institution">St. Joseph's College, Prayagraj</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <i class="fa-li fas fa-graduation-cap"></i>
-                                    <div class="description">
-                                        <p class="course">ICSE, 2016</p>
-                                        <p class="institution">St. Joseph's College, Prayagraj</p>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    
-                    <div class="row">
                         <div class="col-11 col-md-6 interests">
                             <h3>Interests</h3>
-                            <ul class="ul-edu fa-ul">
+                            <ul class="interest-list">
                                 <li>
                                     <i class="fas fa-atom fa-sm "></i>
                                     Artificial Intelligence
@@ -168,35 +106,6 @@
                             </ul>
 
                         </div>
-                        <div class="col-11 col-md-6">
-                            <h3>Education</h3>
-                            <ul class="ul-edu fa-ul">
-                                <li>
-                                    <i class="fas fa-graduation-cap fa-md"></i>
-                                    BTech in Material Science and Engineering,
-                                    2024 (Expected)
-                                    <p class="institution">Indian Institute Of Technology, Kanpur</p>
-
-                                </li>
-
-                                <li>
-                                    <i class="fas fa-graduation-cap fa-md"></i>
-                                    CBSE(AISSCE), 2020
-                                    <p class="institution">The Mother's International School</p>
-
-                                </li>
-
-                                <li>
-                                    <i class="fas fa-graduation-cap fa-md"> </i>
-                                    CBSE(AISCE), 2018
-                                    <p class="institution">The Mother's International School</p>
-                                </li>
-
-                            </ul>
-                        </div>
-
-
-
                     </div>
                 </div>
             </div>
@@ -205,69 +114,12 @@
         </div>
     </section>
 
-    <!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <p class="lead">“I don't care that they stole my idea . . I care that they don't have any of their own”</p>
-            <p class="lead" style="text-align: right;">~Nikola Tesla</p>
-
-        </div>
-    </div>
-
     <!--Experience-->
     <section id="experience">
         <div class="container">
             <div class="row experience-title">
                 <div class="col-12 col-md-6">
                     <h2>Work Experience</h2>
-                </div>
-            </div>
-            <div class="row experience-unit">
-                <div class="col-12 col-md-8">
-                    <h3>Width 8-12</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime
-                        ab
-                        corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui
-                        deserunt,
-                        animi eius veritatis?</p>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <h4>Picture</h4>
-                    <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
-                        alt="personal picture">
-                </div>
-            </div>
-            <div class="row experience-unit">
-                <div class="col-12 col-md-8 order-md-last">
-                    <h3>Width 8-12</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime
-                        ab
-                        corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui
-                        deserunt,
-                        animi eius veritatis?</p>
-                </div>
-                <div class="col-12 col-md-4 order-md-first text-center">
-                    <h4>Picture</h4>
-                    <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
-                        alt="personal picture">
-
-                </div>
-            </div>
-            <div class="row experience-unit">
-                <div class="col-12 col-md-8">
-                    <h3>Width 8-12</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis! Id nesciunt maxime
-                        ab
-                        corrupti nam laboriosam distinctio cupiditate vitae voluptatum culpa enim delectus ex qui
-                        deserunt,
-                        animi eius veritatis?
-                    </p>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <h4>Picture</h4>
-                    <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
-                        alt="personal picture">
-
                 </div>
             </div>
         </div>
@@ -280,45 +132,6 @@
                 <div class="col-12 col-md-4">
                     <h2>Skills</h2>
                 </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-6 col-md-3 skill-item">
-                    <img src="/media/skills-icons/python.png">
-                    <p>Python</p>
-                </div>
-                <div class="col-6 col-md-3 skill-item">
-                    <img src="/media/skills-icons/C++.png">
-                    <p>C++</p>
-                </div>
-                <div class="col-6 col-md-3 skill-item">
-                    <img src="/media/skills-icons/C.png">
-                    <p>C</p>
-                </div>
-                <div class="col-6 col-md-3 skill-item">
-                    <img src="/media/skills-icons/JavaScript.png" alt="">
-                    <p>JavaScript</p>
-                </div>
-
-            </div>
-            <div class="row text-center">
-                <div class="col-6 col-md-3 skill-item">
-                    <img src="/media/skills-icons/HTML.png" alt="">
-                    <p>HTML5</p>
-                </div>
-                <div class="col-6 col-md-3 skill-item">
-                    <img src="/media/skills-icons/CSS.png" alt="">
-                    <p>CSS3</p>
-                </div>
-                <div class="col-6 col-md-3 skill-item">
-                    <img src="/media/skills-icons/Jquery.png" alt="">
-                    <p>JQuery</p>
-                </div>
-                <div class="col-6 col-md-3 skill-item">
-                    <img src="/media/skills-icons/NodeJS.png" alt="">
-                    <p>NodeJS</p>
-                </div>
-
-
             </div>
         </div>
 
@@ -362,6 +175,7 @@
             </div>
         </div>
     </section>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
