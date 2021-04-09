@@ -187,6 +187,11 @@ p {
   border-top: solid 1px rgb(160, 160, 160);
 }
 
-.mwl a:hover {
+.footerlink {
+  color: rgb(160, 160, 160);
+}
+
+.footerlink:hover {
   color: rgb(132, 242, 218);
+  text-decoration: none;
 }
