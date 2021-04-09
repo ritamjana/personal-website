@@ -76,6 +76,10 @@ p {
   list-style: none;
 }
 
+.interest-list li {
+  color: rgb(160, 160, 160);
+}
+
 #about {
   padding: 100px 0px 50px 0px;
 }
@@ -110,6 +114,37 @@ p {
   max-width: 300px;
   width: 100%;
   padding-bottom: 20px;
+}
+
+.card {
+  background-color: rgb(233, 236, 239);
+  border-radius: 0.75em;
+  transition: all 0.7s;
+}
+
+.card:hover {
+  border: none;
+  background-color: rgb(233, 236, 239);
+  box-shadow: 20px 20px 15px 10px rgba(0, 1, 1, 0.3);
+}
+
+.center {
+  text-align: center;
+}
+
+.view-more {
+  padding: 15px 27px;
+  font-size: 16px;
+  background-color: rgb(10, 25, 47);
+  color: rgb(132, 242, 218);
+  border: 2px solid rgb(132, 242, 218);
+  border-radius: 0.25em;
+  transition: all 0.5s;
+}
+
+.view-more:hover {
+  cursor: pointer;
+  background-color: rgb(7, 40, 90);
 }
 
 .email {
@@ -147,33 +182,11 @@ p {
   color: rgb(132, 242, 218);
 }
 
-.card {
-  background-color: rgb(233, 236, 239);
-  border-radius: 0.75em;
-  transition: all 0.7s;
+.horizontal-line {
+  padding-top: 10px;
+  border-top: solid 1px rgb(160, 160, 160);
 }
 
-.card:hover {
-  border: none;
-  background-color: rgb(233, 236, 239);
-  box-shadow: 20px 20px 15px 10px rgba(0, 0, 0, 0.3);
-}
-
-.center {
-  text-align: center;
-}
-
-.view-more {
-  padding: 15px 27px;
-  font-size: 16px;
-  background-color: rgb(10, 25, 47);
+.mwl a:hover {
   color: rgb(132, 242, 218);
-  border: 2px solid rgb(132, 242, 218);
-  border-radius: 0.25em;
-  transition: all 0.5s;
-}
-
-.view-more:hover {
-  cursor: pointer;
-  background-color: rgb(7, 40, 90);
 }
