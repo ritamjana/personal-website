@@ -12,6 +12,13 @@
 body {
   background-color: rgb(10, 25, 47);
 }
+
+header {
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
 h1 {
   color: rgb(132, 242, 218);
   font-family: "Fjalla One", sans-serif;
@@ -101,6 +108,21 @@ p {
   padding: 75px 0px;
 }
 
+.experience-title {
+  padding-bottom: 30px;
+}
+.experience-block {
+  padding: 50px 10px;
+}
+
+.experience-block h3 {
+  color: rgb(160, 160, 160);
+}
+
+.experience-block h5 {
+  color: rgb(160, 160, 160);
+}
+
 .project-item {
   padding-bottom: 30px;
   padding-top: 30px;
@@ -126,10 +148,6 @@ p {
   border: none;
   background-color: rgb(233, 236, 239);
   box-shadow: 20px 20px 15px 10px rgba(0, 1, 1, 0.3);
-}
-
-.center {
-  text-align: center;
 }
 
 .view-more {
@@ -189,6 +207,7 @@ p {
 
 .footerlink {
   color: rgb(160, 160, 160);
+  transition: all 0.5s;
 }
 
 .footerlink:hover {

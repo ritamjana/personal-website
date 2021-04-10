@@ -27,18 +27,17 @@
 
 <body>
     <!--Navigation bar-->
-    <header>
+    <header class="nav-down">
         <nav class="navbar navbar-expand-lg " style="background-color: rgb(13, 53, 90);">
-
             <a href="#" class="navbar-brand">RITAM JANA</a>
             <i class="hamburger fas fa-bars fa-lg" data-toggle="collapse" data-target="#navbarMenu"></i>
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ml-auto" id=navbar-elements>
-                    <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link">Contact Me</a></li>
                     <form class="form-inline">
                         <a href="#" target="_blank"><button class="btn resume-button">Resume</button></a>
                     </form>
@@ -136,6 +135,43 @@
             <div class="row experience-title">
                 <div class="col-12 col-md-6">
                     <h1>Work Experience</h1>
+                </div>
+            </div>
+            <div class="row experience-block">
+                <div class="col-12 col-md-7">
+                    <h3>IMPULSE</h3>
+                    <h5>President, Physics Club</h5>
+                    <i style="color: rgb(160,160,160);">January,2019 - February,2020</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in odit incidunt saepe asperiores
+                        dignissimos cumque fugiat corrupti pariatur, praesentium fugit rem, dolorem excepturi ad. Sequi
+                        corrupti ipsa sint ipsam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo
+                        laborum quos culpa consequuntur itaque eligendi vitae, nam perferendis quisquam nostrum beatae
+                        cum iusto maiores laboriosam qui perspiciatis fuga sed.</p>
+                </div>
+                <div class="col-12 col-md-5 my-auto text-center">
+                    <h5>Picture</h5>
+                    <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+                        alt="personal picture">
+                </div>
+            </div>
+            <div class="row experience-block">
+                <div class="col-12 col-md-7 order-md-last">
+                    <h3>MINET</h3>
+                    <h5>Member, Programming Team, Technology Club</h5>
+                    <i style="color: rgb(160,160,160);">August,2018 - January,2020</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in odit incidunt saepe asperiores
+                        dignissimos cumque
+                        fugiat corrupti pariatur, praesentium fugit rem, dolorem excepturi ad. Sequi corrupti ipsa sint
+                        ipsam! Lorem ipsum
+                        dolor, sit amet consectetur adipisicing elit. Ipsum nemo laborum quos culpa consequuntur itaque
+                        eligendi vitae, nam
+                        perferendis quisquam nostrum beatae cum iusto maiores laboriosam qui perspiciatis fuga sed.</p>
+
+                </div>
+                <div class="col-12 col-md-5 my-auto text-center">
+                    <h5>Picture</h5>
+                    <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
+                        alt="personal picture">
                 </div>
             </div>
         </div>
@@ -250,7 +286,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8">
-                    <p style="font-family: 'Zilla Slab', serif; font-size: 18px;">The best way to reach me is to email
+                    <p style="font-family: 'Zilla Slab', serif; font-size: 19px;">The best way to reach me is to email
                         me at <a class="email" href="mailto:ritam20@iitk.ac.in">ritam20@iitk.ac.in</a> or <a
                             class="email" href="mailto:ritamjana2358@gmail.com">ritamjana2358@gmail.com</a>. I
                         try to respond within 8-10 hours of receiving a message.</p>
@@ -284,29 +320,75 @@
         </div>
 
         <div class="horizontal-line"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <span style="color: rgb(160,160,160);"> Designed and Built by Ritam Jana </span>
-                    </div>
-                    <div class="col-12 col-md-6 text-right">
-                        <a class="footerlink" href="//madewithlove.org.in" >
-                            Made with
-                            <i class="fas fa-heart heart"></i>
-                            in India
-                        </a>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <span style="color: rgb(160,160,160);"> Designed and Built by Ritam Jana </span>
+                </div>
+                <div class="col-12 col-md-6 text-right">
+                    <a class="footerlink" href="//madewithlove.org.in" target="_blank">
+                        Made with
+                        <i class="fas fa-heart heart"></i>
+                        in India
+                    </a>
                 </div>
             </div>
+        </div>
 
 
     </section>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
     <script src="/javascript.js"></script>
+    <script>
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+    </script>
+    <script>
+        $('.navbar-collapse a').click(function () {
+            $(".navbar-collapse").collapse('hide');
+        });
+    </script>
+
 
 
 </body>
