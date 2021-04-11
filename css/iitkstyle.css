@@ -44,6 +44,10 @@ p {
     display: none;
   }
 }
+.navbar-nav > li {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
 .navbar-brand {
   font-family: "Inconsolata", monospace;
   font-size: 24px;
@@ -108,19 +112,22 @@ p {
   padding: 75px 0px;
 }
 
-.experience-title {
-  padding-bottom: 30px;
-}
 .experience-block {
   padding: 50px 10px;
 }
 
 .experience-block h3 {
+  font-family: "Kiwi Maru", serif;
   color: rgb(160, 160, 160);
 }
 
 .experience-block h5 {
-  color: rgb(160, 160, 160);
+  font-family: "Kiwi Maru", serif;
+  color: rgb(132, 242, 218);
+}
+
+.experience-block i {
+  font-family: "Kiwi Maru", serif;
 }
 
 .project-item {
