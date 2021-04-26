@@ -7,9 +7,16 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="author" content="developers" />
 
-  <link rel="ICON" href="media/sales_sale_supermarket_stock_market_icon_153849.ico" />
+  <link rel="ICON" href="/media/brand_logo.jpg" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Zilla+Slab:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Yanone+Kaffeesatz&display=swap"
+    rel="stylesheet">
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -24,49 +31,30 @@
 
 <body>
   <!--Navigation bar-->
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a href="#" class="navbar-brand">RITAM</a>
-        <i class="hamburger fas fa-bars fa-lg" data-toggle="collapse" data-target="#navbarMenu"></i>
-        <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ml-auto" id=navbar-elements>
-            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
-          </ul>
-        </div>
+  <header class="nav-down">
+    <nav class="navbar navbar-expand-lg " style="background-color: rgb(13, 53, 90);">
+      <a href="#" class="navbar-brand">RITAM JANA</a>
+      <i class="hamburger fas fa-bars fa-lg" data-toggle="collapse" data-target="#navbarMenu"></i>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto" id=navbar-elements>
+          <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-link">Contact Me</a></li>
+          <form class="form-inline">
+            <a href="#" target="_blank"><button class="btn resume-button">Resume</button></a>
+          </form>
+        </ul>
       </div>
     </nav>
   </header>
 
-
-
-
   <section id="about">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4 text-center">
-          <img class="image rounded-circle" src="/media/neatoshop_insert-funny-here_1532776307.large.png"
-            alt="personal picture">
-          <br><br>
-          <div class="portrait-title">
-            <h3 itemprop="name">Ritam Jana</h3>
-            <h4 itemprop="jobTitle">First Year Undergraduate Student</h4>
-            <h5>
-              <a href="https://www.iitk.ac.in/mse/">
-                Department of Materials Science and Engineering
-              </a>
-            </h5>
-
-            <h5>
-              <a href="http://iitk.ac.in" target="_blank">
-                <span itemprop="name">Indian Institute Of Technology Kanpur</span>
-              </a>
-            </h5>
-          </div>
-          <br>
+      <div class="row align-content-center">
+        <div class="col-12 col-lg-4 order-last my-auto text-center">
+          <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
         </div>
         <div class="col-12 col-lg-8">
           <div class="row about-title">
@@ -99,37 +87,96 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda illo
             sapiente id deleniti
             atque expedita.</p>
-
           <div class="row">
-            <div class="col-11 col-md-5 interests">
-              <h2>Interests</h2>
-              <ul class="ul-edu fa-ul">
+            <div class="col-12 interests">
+              <p style="font-size: 18px;">Languages and Softwares I worked with recently: </p>
+            </div>
+            <div class="col-4">
+              <ul class="interest-list">
                 <li>
-                  <i class="fas fa-atom "></i>
-                  Artificial Intelligence
+                  <i class="fas fa-atom fa-sm "></i>
+                  Python
                 </li>
                 <li>
-                  <i class="fas fa-atom "></i>
-                  Deep Learning
+                  <i class="fas fa-atom fa-sm"></i>
+                  C/C++
                 </li>
                 <li>
-                  <i class="fas fa-atom "></i>
-                  Competetive Programming
-                </li>
-                <li>
-                  <i class="fas fa-atom "></i>
-                  Astronomy
+                  <i class="fas fa-atom fa-sm"></i>
+                  HTML
                 </li>
               </ul>
+            </div>
+            <div class="col-5">
+              <ul class="interest-list">
+                <li>
+                  <i class="fas fa-atom fa-sm"></i>
+                  CSS
+                </li>
+                <li>
+                  <i class="fas fa-atom fa-sm"></i>
+                  JavaScript
+                </li>
+                <li>
+                  <i class="fas fa-atom fa-sm"></i>
+                  Open CV
+                </li>
 
+              </ul>
             </div>
           </div>
         </div>
-      </div>    
+      </div>
+
+
     </div>
   </section>
 
-  
+  <!--Experience-->
+  <section id="experience">
+    <div class="container">
+      <div class="row experience-title">
+        <div class="col-12 col-md-6">
+          <h1>Work Experience</h1>
+        </div>
+      </div>
+      <div class="row experience-block">
+        <div class="col-12 col-md-7">
+          <h3>IMPULSE</h3>
+          <h5>President, Physics Club</h5>
+          <i style="color:rgb(132, 242, 218);">January,2019 - February,2020</i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in odit incidunt saepe asperiores
+            dignissimos cumque fugiat corrupti pariatur, praesentium fugit rem, dolorem excepturi ad. Sequi
+            corrupti ipsa sint ipsam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo
+            laborum quos culpa consequuntur itaque eligendi vitae, nam perferendis quisquam nostrum beatae
+            cum iusto maiores laboriosam qui perspiciatis fuga sed.</p>
+        </div>
+        <div class="col-12 col-md-5 my-auto text-center">
+          <h5>Picture</h5>
+          <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
+        </div>
+      </div>
+      <div class="row experience-block">
+        <div class="col-12 col-md-7 order-md-last">
+          <h3>MINET</h3>
+          <h5>Member, Programming Team, Technology Club</h5>
+          <i style="color: rgb(132, 242, 218);">August,2018 - January,2020</i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in odit incidunt saepe asperiores
+            dignissimos cumque
+            fugiat corrupti pariatur, praesentium fugit rem, dolorem excepturi ad. Sequi corrupti ipsa sint
+            ipsam! Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Ipsum nemo laborum quos culpa consequuntur itaque
+            eligendi vitae, nam
+            perferendis quisquam nostrum beatae cum iusto maiores laboriosam qui perspiciatis fuga sed.</p>
+
+        </div>
+        <div class="col-12 col-md-5 my-auto text-center">
+          <h5>Picture</h5>
+          <img class="image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="personal picture">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--Skills-->
   <section id="skills">
@@ -138,45 +185,6 @@
         <div class="col-12 col-md-4">
           <h1>Skills</h1>
         </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-6 col-md-3 skill-item">
-          <img src="/media/skills-icons/Python.png">
-          <p>Python</p>
-        </div>
-        <div class="col-6 col-md-3 skill-item">
-          <img src="/media/skills-icons/C++.png">
-          <p>C++</p>
-        </div>
-        <div class="col-6 col-md-3 skill-item">
-          <img src="/media/skills-icons/C.png">
-          <p>C</p>
-        </div>
-        <div class="col-6 col-md-3 skill-item">
-          <img src="/media/skills-icons/JavaScript.png" alt="">
-          <p>JavaScript</p>
-        </div>
-
-      </div>
-      <div class="row text-center">
-        <div class="col-6 col-md-3 skill-item">
-          <img src="/media/skills-icons/HTML.png" alt="">
-          <p>HTML5</p>
-        </div>
-        <div class="col-6 col-md-3 skill-item">
-          <img src="/media/skills-icons/CSS.png" alt="">
-          <p>CSS3</p>
-        </div>
-        <div class="col-6 col-md-3 skill-item">
-          <img src="/media/skills-icons/JQuery.png" alt="">
-          <p>JQuery</p>
-        </div>
-        <div class="col-6 col-md-3 skill-item">
-          <img src="/media/skills-icons/NodeJS.png" alt="">
-          <p>NodeJS</p>
-        </div>
-        
-
       </div>
     </div>
 
@@ -192,33 +200,87 @@
       </div>
       <div id="visible-projects">
         <div class="row">
-          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+          <div class="project-item col-12 col-md-6 col-lg-4">
             <div class="card">
               <div class="card-body">
-                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
-                <h5 class="card-title">Special title treatment</h5>
+                <header>
+                  <div class="row">
+                    <div class="col-6 text-left my-auto">
+                      <i class="far fa-folder fa-3x"></i>
+                    </div>
+                    <div class="card-external-links col-6 text-right my-auto">
+                      <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                  </div>
+                </header>
+                <br>
+                <h2 class="card-title">Special title treatment</h2>
                 <p class="card-text">With supporting text below as a natural lead-in to additional
-                  content.</p>
+                  content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi adipisci
+                  iure fugiat ut voluptates, </p>
+                <footer class="project-languages">
+                  <ul>
+                    <li>Node JS</li>
+                    <li>HTML</li>
+                  </ul>
+                </footer>
               </div>
             </div>
           </div>
-          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+          <div class="project-item col-12 col-md-6 col-lg-4 ">
             <div class="card">
               <div class="card-body">
-                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
-                <h5 class="card-title">Special title treatment</h5>
+                <header>
+                  <div class="row">
+                    <div class="col-6 text-left my-auto">
+                      <i class="far fa-folder fa-3x"></i>
+                    </div>
+                    <div class="card-external-links col-6 text-right my-auto">
+                      <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                  </div>
+                </header>
+                <br>
+                <h2 class="card-title">Special title treatment</h2>
                 <p class="card-text">With supporting text below as a natural lead-in to additional
-                  content.</p>
+                  content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi adipisci
+                  iure fugiat ut voluptates, </p>
+                <footer class="project-languages">
+                  <ul>
+                    <li>Node JS</li>
+                    <li>HTML</li>
+                  </ul>
+                </footer>
               </div>
             </div>
           </div>
-          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+          <div class="project-item col-12 col-md-6 col-lg-4 ">
             <div class="card">
               <div class="card-body">
-                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
-                <h5 class="card-title">Special title treatment</h5>
+                <header>
+                  <div class="row">
+                    <div class="col-6 text-left my-auto">
+                      <i class="far fa-folder fa-3x"></i>
+                    </div>
+                    <div class="card-external-links col-6 text-right my-auto">
+                      <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                  </div>
+                </header>
+                <br>
+                <h2 class="card-title">Special title treatment</h2>
                 <p class="card-text">With supporting text below as a natural lead-in to additional
-                  content.</p>
+                  content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi adipisci
+                  iure fugiat ut voluptates, </p>
+                <footer class="project-languages">
+                  <ul>
+                    <li>Node JS</li>
+                    <li>HTML</li>
+                  </ul>
+                </footer>
               </div>
             </div>
           </div>
@@ -226,33 +288,87 @@
       </div>
       <div id="extra-projects" class="collapse">
         <div class="row">
-          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+          <div class="project-item col-12 col-md-6 col-lg-4">
             <div class="card">
               <div class="card-body">
-                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
-                <h5 class="card-title">Special title treatment</h5>
+                <header>
+                  <div class="row">
+                    <div class="col-6 text-left my-auto">
+                      <i class="far fa-folder fa-3x"></i>
+                    </div>
+                    <div class="card-external-links col-6 text-right my-auto">
+                      <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                  </div>
+                </header>
+                <br>
+                <h2 class="card-title">Special title treatment</h2>
                 <p class="card-text">With supporting text below as a natural lead-in to additional
-                  content.</p>
+                  content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi adipisci
+                  iure fugiat ut voluptates, </p>
+                <footer class="project-languages">
+                  <ul>
+                    <li>Node JS</li>
+                    <li>HTML</li>
+                  </ul>
+                </footer>
               </div>
             </div>
           </div>
-          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+          <div class="project-item col-12 col-md-6 col-lg-4">
             <div class="card">
               <div class="card-body">
-                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
-                <h5 class="card-title">Special title treatment</h5>
+                <header>
+                  <div class="row">
+                    <div class="col-6 text-left my-auto">
+                      <i class="far fa-folder fa-3x"></i>
+                    </div>
+                    <div class="card-external-links col-6 text-right my-auto">
+                      <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                  </div>
+                </header>
+                <br>
+                <h2 class="card-title">Special title treatment</h2>
                 <p class="card-text">With supporting text below as a natural lead-in to additional
-                  content.</p>
+                  content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi adipisci
+                  iure fugiat ut voluptates, </p>
+                <footer class="project-languages">
+                  <ul>
+                    <li>Node JS</li>
+                    <li>HTML</li>
+                  </ul>
+                </footer>
               </div>
             </div>
           </div>
-          <div class="project-item col-12 col-md-6 col-lg-4 text-center">
+          <div class="project-item col-12 col-md-6 col-lg-4">
             <div class="card">
               <div class="card-body">
-                <img class="project-image" src="/media/neatoshop_insert-funny-here_1532776307.large.png" alt="">
-                <h5 class="card-title">Special title treatment</h5>
+                <header>
+                  <div class="row">
+                    <div class="col-6 text-left my-auto">
+                      <i class="far fa-folder fa-3x"></i>
+                    </div>
+                    <div class="card-external-links col-6 text-right my-auto">
+                      <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                      <a href="#" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                  </div>
+                </header>
+                <br>
+                <h2 class="card-title">Special title treatment</h2>
                 <p class="card-text">With supporting text below as a natural lead-in to additional
-                  content.</p>
+                  content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi adipisci
+                  iure fugiat ut voluptates, </p>
+                <footer class="project-languages">
+                  <ul>
+                    <li>Node JS</li>
+                    <li>HTML</li>
+                  </ul>
+                </footer>
               </div>
             </div>
           </div>
@@ -260,9 +376,11 @@
       </div>
       <div class="row text-center">
         <div class="col-12">
-          <button class="view-more" id='collapseExample' data-toggle='collapse' data-target="#extra-projects">View More</button>
+          <button class="view-more" id='collapseExample' data-toggle='collapse' data-target="#extra-projects">View
+            More</button>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -271,9 +389,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-8">
-          <h5>The best way to reach me is to email me at <a style="text-decoration: underline dotted;"
+          <p style="font-family: 'Zilla Slab', serif; font-size: 19px;">The best way to reach me is to email
+            me at <a class="email" href="mailto:ritam20@iitk.ac.in">ritam20@iitk.ac.in</a> or <a class="email"
               href="mailto:ritamjana2358@gmail.com">ritamjana2358@gmail.com</a>. I
-            try to respond within 8-10 hours of receiving a message.</h5>
+            try to respond within 8-10 hours of receiving a message.</p>
         </div>
         <div class="col-12 col-lg-4 network-list">
           <div class="d-flex justify-content-around">
@@ -299,13 +418,41 @@
         </div>
 
       </div>
+
+
     </div>
+
+    <div class="horizontal-line"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span style="color: rgb(160,160,160);"> Designed and Built by Ritam Jana </span>
+        </div>
+        <div class="col-12 col-md-6 text-right">
+          <a class="footerlink" href="//madewithlove.org.in" target="_blank">
+            Made with
+            <i class="fas fa-heart heart"></i>
+            in India
+          </a>
+        </div>
+      </div>
+    </div>
+
+
   </section>
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/indexscript.js"></script>
+  <script src="path/to/smooth-scroll.polyfills.min.js"></script>
+  <script src="/javascript.js"></script>
+  <script>
+    $('.navbar-collapse a').click(function () {
+      $(".navbar-collapse").collapse('hide');
+    });
+  </script>
+
 
 
 </body>

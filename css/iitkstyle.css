@@ -130,69 +130,8 @@ p {
   font-family: "Kiwi Maru", serif;
 }
 
-.project-item {
-  padding: 30px 10px;
-}
-
-.card {
-  background-color: rgb(13, 53, 90);
-  border-radius: 0.6em;
-  transition: all 1s;
-}
-
-.card:hover {
-  box-shadow: 0px 4px 8px rgba(13, 53, 90, 0.2);
-  top: -4px;
-}
-
-.card-body i {
-  color: rgb(160, 160, 160);
-}
-
-.card-title {
-  color: rgb(160, 160, 160);
-  font-family: "Yanone Kaffeesatz", sans-serif;
-}
-
-.card-external-links i {
-  padding: 0px 10px;
-  transition: all 0.5s;
-}
-
-.card-external-links i:hover {
-  color: rgb(132, 242, 218);
-}
-
-.project-languages ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-
-.project-languages li {
-  font-size: 16px;
-  color: rgb(160, 160, 160);
-  padding: 0px 10px;
-  font-family: "Orbitron", sans-serif;
-}
-
-.project-languages li:first-child {
-  padding-left: 0;
-}
-
-.view-more {
-  padding: 15px 27px;
-  font-size: 16px;
-  background-color: rgb(10, 25, 47);
-  color: rgb(132, 242, 218);
-  border: 2px solid rgb(132, 242, 218);
-  border-radius: 0.25em;
-  transition: all 0.5s;
-}
-
-.view-more:hover {
-  cursor: pointer;
-  background-color: rgb(7, 40, 90);
+.project-title {
+  padding-bottom: 30px;
 }
 
 .email {

@@ -1,22 +1,34 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Itim", cursive;
-}
-a {
-  color: black;
-  transition: all 0.3s;
+  font-family: "Comfortaa", cursive;
 }
 
-a:hover {
-  text-decoration: none;
-  color: green;
+.image {
+  max-width: 250px;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(10, 25, 47);
+}
+
+header {
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+h1 {
+  color: rgb(132, 242, 218);
+  font-family: "Fjalla One", sans-serif;
+}
+
+p {
+  color: rgb(160, 160, 160);
 }
 .container {
   padding: 0px 25px;
-}
-.navbar {
-  opacity: 0.9;
 }
 
 .hamburger {
@@ -32,76 +44,167 @@ a:hover {
     display: none;
   }
 }
-
-.carousel-image {
-  width: 100%;
-  height: 100%;
+.navbar-nav > li {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.navbar-brand {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  color: azure;
+  transition: all 0.5s;
 }
 
-.image {
-  max-width: 250px;
-  width: 100%;
+.navbar-brand:hover {
+  color: rgb(132, 242, 218);
 }
-.jumbotron {
-  padding: 25px 15px 15px 15px;
+
+.nav-link {
+  font-size: 18px;
+  color: azure;
+  transition: all 0.5s;
 }
+
+.nav-link:hover {
+  color: rgb(132, 242, 218);
+}
+
+.resume-button {
+  font-size: 18px;
+  background-color: rgb(13, 53, 90);
+  color: white;
+  border: 2px solid rgb(132, 242, 218);
+  border-radius: 0.3em;
+  transition: all 0.5s;
+}
+
+.resume-button:hover {
+  background-color: rgb(132, 242, 218);
+  color: rgb(13, 53, 90);
+}
+
 .interest-list {
   list-style: none;
 }
-.education-list {
-  list-style: none;
-}
 
-.jumbotron {
-  margin-bottom: 0px;
+.interest-list li {
+  color: rgb(160, 160, 160);
 }
 
 #about {
-  padding: 75px 0px 50px 0px;
+  padding: 100px 0px 50px 0px;
 }
 
 #skills {
-  background-color: blanchedalmond;
   padding: 75px 0px;
 }
 
-#projects {
-  padding: 50px 50px;
-}
-
-#footer {
-  background-color: rgb(233, 236, 239);
+#experience {
+  background-color: rgb(10, 31, 63);
   padding: 50px 0px;
 }
 
-.skill-item {
-  padding: 20px 0px;
+#footer {
+  padding: 25px 0px;
+}
+#projects {
+  background-color: rgb(10, 31, 63);
+  padding: 75px 0px;
 }
 
-.skill-item img {
-  max-width: 100px;
-  max-height: 100px;
-  width: 100%;
-  height: 100%;
+.experience-block {
+  padding: 50px 10px;
 }
 
-.hidden {
-  padding: 10px 20px;
+.experience-block h3 {
+  font-family: "Kiwi Maru", serif;
+  color: rgb(160, 160, 160);
+}
+
+.experience-block h5 {
+  font-family: "Kiwi Maru", serif;
+  color: rgb(132, 242, 218);
+}
+
+.experience-block i {
+  font-family: "Kiwi Maru", serif;
 }
 
 .project-item {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 30px 10px;
 }
 
-.project-item:hover {
-  box-shadow: 30px;
+.card {
+  background-color: rgb(13, 53, 90);
+  border-radius: 0.6em;
+  transition: all 1s;
 }
 
-.project-image {
-  max-width: 300px;
-  width: 100%;
-  padding-bottom: 20px;
+.card:hover {
+  box-shadow: 0px 4px 8px rgba(13, 53, 90, 0.2);
+  top: -4px;
+}
+
+.card-body i {
+  color: rgb(160, 160, 160);
+}
+
+.card-title {
+  color: rgb(160, 160, 160);
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.card-external-links i {
+  padding: 0px 10px;
+  transition: all 0.5s;
+}
+
+.card-external-links i:hover {
+  color: rgb(132, 242, 218);
+}
+
+.project-languages ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-languages li {
+  font-size: 16px;
+  color: rgb(160, 160, 160);
+  padding: 0px 10px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.project-languages li:first-child {
+  padding-left: 0;
+}
+
+.view-more {
+  padding: 15px 27px;
+  font-size: 16px;
+  background-color: rgb(10, 25, 47);
+  color: rgb(132, 242, 218);
+  border: 2px solid rgb(132, 242, 218);
+  border-radius: 0.25em;
+  transition: all 0.5s;
+}
+
+.view-more:hover {
+  cursor: pointer;
+  background-color: rgb(7, 40, 90);
+}
+
+.email {
+  font-family: "Zilla Slab", serif;
+  text-decoration: underline dotted;
+  transition: all 0.75s;
+  color: rgb(160, 160, 160);
+}
+
+.email:hover {
+  text-decoration: underline dotted;
+  color: rgb(132, 242, 218);
 }
 
 .network-list {
@@ -118,33 +221,26 @@ a:hover {
   padding: 0px 10px;
 }
 
-.card {
-  background-color: rgb(233, 236, 239);
-  border-radius: 0.75em;
-  transition: all 0.7s;
-}
-
-.card:hover {
-  border: none;
-  background-color: rgb(233, 236, 239);
-  box-shadow: 20px 20px 15px 10px rgba(0, 0, 0, 0.3);
-}
-
-.center {
-  text-align: center;
-}
-
-.view-more {
-  padding: 15px 27px;
-  font-size: 16px;
-  background-color: rgb(10, 25, 47);
-  color: rgb(132, 242, 218);
-  border: 2px solid rgb(132, 242, 218);
-  border-radius: 0.25em;
+.network-icon li a {
+  color: rgb(160, 160, 160);
   transition: all 0.5s;
 }
 
-.view-more:hover {
-  cursor: pointer;
-  background-color: rgb(7, 40, 90);
+.network-icon li a:hover {
+  color: rgb(132, 242, 218);
+}
+
+.horizontal-line {
+  padding-top: 10px;
+  border-top: solid 1px rgb(160, 160, 160);
+}
+
+.footerlink {
+  color: rgb(160, 160, 160);
+  transition: all 0.5s;
+}
+
+.footerlink:hover {
+  color: rgb(132, 242, 218);
+  text-decoration: none;
 }
