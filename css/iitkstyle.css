@@ -30,6 +30,41 @@ p {
   padding: 25px;
 }
 
+.intro-h1 {
+  font-size: 4vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 750;
+}
+
+.intro-h2 {
+  font-size: 1vw;
+  color: white;
+}
+
+.intro-h4 {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .intro-h1 {
+    font-size: 7vw;
+  }
+
+  .intro-h2 {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro-h1 {
+    font-size: 11vw;
+  }
+
+  .intro-h2 {
+    font-size: 4vw;
+  }
+}
+
 .navbar {
   opacity: 0.85;
 }
@@ -99,17 +134,21 @@ p {
   color: rgb(160, 160, 160);
 }
 
-#about {
-  padding: 100px 0px 50px 0px;
+#introduction {
+  padding: 250px 0px 100px 0px;
 }
 
-#skills {
-  padding: 75px 0px;
+#about {
+  padding: 100px 0px 100px 0px;
 }
 
 #experience {
   background-color: rgb(10, 31, 63);
-  padding: 50px 0px;
+  padding: 75px 0px;
+}
+
+#skills {
+  padding: 100px 0px;
 }
 
 #footer {
@@ -142,12 +181,22 @@ p {
 .skills-title {
   padding-bottom: 50px;
 }
+
 .skills-item {
   padding: 20px;
 }
 
 .skills-item i {
   color: rgb(132, 242, 218);
+}
+
+.modal-title {
+  color: white;
+}
+
+.skill-popup {
+  background-color: rgba(10, 31, 63, 0.8);
+  border-radius: 30px;
 }
 
 ::selection {
@@ -160,25 +209,31 @@ p {
   padding: 25px 30px;
   max-width: 800px;
   width: 100%;
-  background: #fff;
+  background: rgba(13, 53, 90, 0.8);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
+
 .skill-bars .bar {
   margin: 20px 0;
 }
+
 .skill-bars .bar:first-child {
   margin-top: 0px;
 }
+
 .skill-bars .bar .info {
   margin-bottom: 5px;
 }
+
 .skill-bars .bar .info span {
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
+  color: white;
   animation: showText 0.5s 1s linear forwards;
 }
+
 @keyframes showText {
   100% {
     opacity: 1;
@@ -188,29 +243,30 @@ p {
 .skill-bars .bar .progress-line {
   height: 10px;
   width: 100%;
-  background: #f0f0f0;
+  background: rgb(10, 25, 47);
   position: relative;
   transform: scaleX(0);
   transform-origin: left;
   border-radius: 10px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
-    0 1px rgba(255, 255, 255, 0.8);
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
 @keyframes animate {
   100% {
     transform: scaleX(1);
   }
 }
+
 .bar .progress-line span {
   height: 100%;
   position: absolute;
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  background: #6665ee;
+  background: rgb(132, 242, 218);
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
 .bar .progress-line.html span {
   width: 90%;
 }
@@ -226,11 +282,9 @@ p {
 .bar .progress-line.mysql span {
   width: 50%;
 }
-
 .bar .progress-line.bootstrap span {
   width: 75%;
 }
-
 .bar .progress-line.react span {
   width: 15%;
 }
@@ -253,10 +307,24 @@ p {
   animation: showText2 0.5s 1.5s linear forwards;
 }
 
+.close-popover {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgba(10, 31, 63, 0.8);
+  color: rgb(132, 242, 218);
+  border: 2px solid rgb(132, 242, 218);
+  border-radius: 0.25em;
+  transition: all 0.5s;
+}
+
+.close-popover:hover {
+  cursor: pointer;
+  background-color: rgb(7, 40, 90);
+}
 .show-all {
   padding: 15px 27px;
   font-size: 16px;
-  background-color: rgb(10, 25, 47);
+  background-color: rgba(10, 25, 47, 0.8);
   color: rgb(132, 242, 218);
   border: 2px solid rgb(132, 242, 218);
   border-radius: 0.25em;
