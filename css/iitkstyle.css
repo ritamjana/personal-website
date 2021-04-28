@@ -5,7 +5,14 @@
 }
 
 .image {
-  max-width: 250px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.self-image {
+  padding: 20px;
+  max-width: 300px;
   width: 100%;
 }
 
@@ -106,10 +113,12 @@ p {
 .nav-link {
   font-size: 15px;
   color: azure;
-  transition: all 0.5s;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .nav-link:hover {
+  font-weight: 300;
   color: rgb(132, 242, 218);
 }
 
