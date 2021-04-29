@@ -4,9 +4,8 @@
   font-family: "Comfortaa", cursive;
 }
 
-.self-image {
-  padding: 20px;
-  max-width: 300px;
+.image {
+  max-width: 250px;
   width: 100%;
 }
 
@@ -15,6 +14,8 @@ body {
 }
 
 header {
+  top: 0;
+  transition: top 0.2s ease-in-out;
   width: 100%;
 }
 
@@ -26,49 +27,12 @@ h1 {
 p {
   color: rgb(160, 160, 160);
 }
-
 .container {
-  padding: 25px;
-}
-
-.intro-h1 {
-  font-size: 4vw;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 750;
-}
-
-.intro-h2 {
-  font-family: "Kiwi Maru", serif;
-  font-size: 1vw;
-  color: white;
-}
-
-@media (max-width: 1200px) {
-  .intro-h1 {
-    font-size: 7vw;
-  }
-
-  .intro-h2 {
-    font-size: 1.5vw;
-  }
-}
-
-@media (max-width: 576px) {
-  .intro-h1 {
-    font-size: 11vw;
-  }
-
-  .intro-h2 {
-    font-size: 4vw;
-  }
-}
-
-.navbar {
-  opacity: 0.85;
+  padding: 0px 25px;
 }
 
 .hamburger {
-  color: azure;
+  color: white;
 }
 
 .hamburger:hover {
@@ -80,16 +44,10 @@ p {
     display: none;
   }
 }
-
-.navbar {
-  padding: 10px 50px;
-}
-
 .navbar-nav > li {
   padding-left: 7.5px;
   padding-right: 7.5px;
 }
-
 .navbar-brand {
   font-family: "Inconsolata", monospace;
   font-size: 24px;
@@ -102,28 +60,27 @@ p {
 }
 
 .nav-link {
-  font-size: 15px;
+  font-size: 18px;
   color: azure;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.5s;
 }
 
 .nav-link:hover {
-  font-weight: 300;
   color: rgb(132, 242, 218);
 }
 
 .resume-button {
-  font-size: 15px;
+  font-size: 18px;
   background-color: rgb(13, 53, 90);
-  color: azure;
+  color: white;
   border: 2px solid rgb(132, 242, 218);
   border-radius: 0.3em;
   transition: all 0.5s;
 }
 
 .resume-button:hover {
-  background-color: rgb(12, 87, 158);
+  background-color: rgb(132, 242, 218);
+  color: rgb(13, 53, 90);
 }
 
 .interest-list {
@@ -134,27 +91,22 @@ p {
   color: rgb(160, 160, 160);
 }
 
-#introduction {
-  padding: 250px 0px 100px 0px;
+#about {
+  padding: 100px 0px 50px 0px;
 }
 
-#about {
-  padding: 100px 0px 100px 0px;
+#skills {
+  padding: 75px 0px;
 }
 
 #experience {
   background-color: rgb(10, 31, 63);
-  padding: 75px 0px;
-}
-
-#skills {
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 
 #footer {
   padding: 25px 0px;
 }
-
 #projects {
   background-color: rgb(10, 31, 63);
   padding: 75px 0px;
@@ -166,7 +118,7 @@ p {
 
 .experience-block h3 {
   font-family: "Kiwi Maru", serif;
-  color: rgb(216, 211, 211);
+  color: rgb(160, 160, 160);
 }
 
 .experience-block h5 {
@@ -174,178 +126,73 @@ p {
   color: rgb(132, 242, 218);
 }
 
-.experience-block p {
-  color: rgb(216, 211, 211);
-}
-
 .experience-block i {
   font-family: "Kiwi Maru", serif;
 }
 
-.experience-image {
-  max-width: 300px;
-  width: 100%;
+.project-item {
+  padding: 30px 10px;
 }
 
-.skills-title {
-  padding-bottom: 50px;
+.card {
+  background-color: rgb(13, 53, 90);
+  border-radius: 0.6em;
+  transition: all 1s;
 }
 
-.skills-item {
-  padding: 20px;
+.card:hover {
+  box-shadow: 0px 4px 8px rgba(13, 53, 90, 0.2);
+  top: -4px;
 }
 
-.skills-item i {
-  color: rgb(132, 242, 218);
+.card-body i {
+  color: rgb(160, 160, 160);
 }
 
-.modal-title {
-  color: white;
+.card-title {
+  color: rgb(160, 160, 160);
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
-.skill-popup {
-  background-color: rgba(10, 31, 63, 0.8);
-  border-radius: 30px;
-}
-
-.skill-bars {
-  align-items: center;
-  padding: 25px 30px;
-  max-width: 800px;
-  width: 100%;
-  background: rgba(13, 53, 90, 0.8);
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
-.skill-bars .bar {
-  margin: 20px 0;
-}
-
-.skill-bars .bar:first-child {
-  margin-top: 0px;
-}
-
-.skill-bars .bar .info {
-  margin-bottom: 5px;
-}
-
-.skill-bars .bar .info span {
-  font-weight: 500;
-  font-size: 17px;
-  opacity: 0;
-  color: white;
-  animation: showText 0.5s 1s linear forwards;
-}
-
-@keyframes showText {
-  100% {
-    opacity: 1;
-  }
-}
-
-.skill-bars .bar .progress-line {
-  height: 10px;
-  width: 100%;
-  background: rgb(10, 25, 47);
-  position: relative;
-  transform: scaleX(0);
-  transform-origin: left;
-  border-radius: 10px;
-  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.bar .progress-line span {
-  height: 100%;
-  position: absolute;
-  border-radius: 10px;
-  transform: scaleX(0);
-  transform-origin: left;
-  background: rgb(132, 242, 218);
-  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-.bar .progress-line.html span {
-  width: 90%;
-}
-.bar .progress-line.css span {
-  width: 85%;
-}
-.bar .progress-line.javascript span {
-  width: 25%;
-}
-.bar .progress-line.python span {
-  width: 80%;
-}
-.bar .progress-line.mysql span {
-  width: 50%;
-}
-.bar .progress-line.bootstrap span {
-  width: 75%;
-}
-.bar .progress-line.react span {
-  width: 15%;
-}
-.bar .progress-line.c span {
-  width: 90%;
-}
-
-.progress-line span::before {
-  position: absolute;
-  content: "";
-  top: -10px;
-  right: 0;
-  height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-color: #000;
-  opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
-}
-
-.close-popover {
-  padding: 10px 15px;
-  font-size: 16px;
-  background-color: rgba(10, 31, 63, 0.8);
-  color: rgb(132, 242, 218);
-  border: 2px solid rgb(132, 242, 218);
-  border-radius: 0.25em;
+.card-external-links i {
+  padding: 0px 10px;
   transition: all 0.5s;
 }
 
-.close-popover:hover {
-  cursor: pointer;
-  background-color: rgb(7, 40, 90);
+.card-external-links i:hover {
+  color: rgb(132, 242, 218);
 }
-.show-all {
+
+.project-languages ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-languages li {
+  font-size: 16px;
+  color: rgb(160, 160, 160);
+  padding: 0px 10px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.project-languages li:first-child {
+  padding-left: 0;
+}
+
+.view-more {
   padding: 15px 27px;
   font-size: 16px;
-  background-color: rgba(10, 25, 47, 0.8);
+  background-color: rgb(10, 25, 47);
   color: rgb(132, 242, 218);
   border: 2px solid rgb(132, 242, 218);
   border-radius: 0.25em;
   transition: all 0.5s;
 }
 
-.show-all:hover {
+.view-more:hover {
   cursor: pointer;
   background-color: rgb(7, 40, 90);
-}
-
-.project-title {
-  padding-bottom: 30px;
-}
-
-.footer-title {
-  padding: 15px 0px;
 }
 
 .email {
@@ -388,26 +235,12 @@ p {
   border-top: solid 1px rgb(160, 160, 160);
 }
 
-.footer-extra {
-  padding-bottom: 10px;
-}
-
 .footerlink {
   color: rgb(160, 160, 160);
   transition: all 0.5s;
 }
 
 .footerlink:hover {
-  color: rgb(132, 242, 218);
-  text-decoration: none;
-}
-
-.uplink {
-  color: rgb(160, 160, 160);
-  transition: all 0.5s;
-}
-
-.uplink:hover {
   color: rgb(132, 242, 218);
   text-decoration: none;
 }
