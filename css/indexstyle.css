@@ -1,13 +1,24 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Comfortaa", cursive;
+  font-family: "Oxygen", sans-serif;
 }
 
 .self-image {
   padding: 20px;
   max-width: 300px;
   width: 100%;
+}
+
+.study-image {
+  max-width: 700px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .study-image {
+    display: none;
+  }
 }
 
 body {
@@ -24,7 +35,7 @@ h1 {
 }
 
 p {
-  color: rgb(160, 160, 160);
+  color: rgb(180, 180, 180);
 }
 
 .container {
@@ -40,7 +51,7 @@ p {
 .intro-h2 {
   font-family: "Kiwi Maru", serif;
   font-size: 1vw;
-  color: azure;
+  color: rgb(180, 180, 180);
 }
 
 @media (max-width: 1200px) {
@@ -64,7 +75,7 @@ p {
 }
 
 .navbar {
-  opacity: 0.85;
+  opacity: 0.95;
 }
 
 .hamburger {
@@ -131,7 +142,7 @@ p {
 }
 
 .interest-list li {
-  color: rgb(160, 160, 160);
+  color: rgb(180, 180, 180);
 }
 
 #introduction {
@@ -362,7 +373,7 @@ p {
   font-family: "Zilla Slab", serif;
   text-decoration: underline dotted;
   transition: all 0.75s;
-  color: rgb(160, 160, 160);
+  color: rgb(180, 180, 180);
 }
 
 .email:hover {
@@ -385,7 +396,7 @@ p {
 }
 
 .network-icon li a {
-  color: rgb(160, 160, 160);
+  color: rgb(180, 180, 180);
   transition: all 0.5s;
 }
 
@@ -395,7 +406,7 @@ p {
 
 .horizontal-line {
   padding-top: 10px;
-  border-top: solid 1px rgb(160, 160, 160);
+  border-top: solid 1px rgb(180, 180, 180);
 }
 
 .footer-extra {
@@ -403,7 +414,7 @@ p {
 }
 
 .footerlink {
-  color: rgb(160, 160, 160);
+  color: rgb(180, 180, 180);
   transition: all 0.5s;
 }
 
@@ -413,7 +424,7 @@ p {
 }
 
 .uplink {
-  color: rgb(160, 160, 160);
+  color: rgb(180, 180, 180);
   transition: all 0.5s;
 }
 
