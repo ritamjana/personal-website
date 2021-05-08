@@ -6,8 +6,9 @@
 
 .self-image {
   padding: 20px;
-  max-width: 300px;
+  max-width: 500px;
   width: 100%;
+  border-radius: 50px;
 }
 
 .study-image {
@@ -197,6 +198,7 @@ p {
 .experience-image {
   max-width: 500px;
   width: 100%;
+  border-radius: 55px;
 }
 
 .padding {
